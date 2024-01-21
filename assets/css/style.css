@@ -319,17 +319,18 @@ h6 {
   height: calc(100vh - 110px);
   background: url("/assets/video/intro.mp4") top center;
   background-size: cover;
+  background-color: #5d6a75;
   position: relative;
 }
 
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.65);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+.main-video {
+  width: 100% !important;
+  object-fit: fill;
+  flex: 1 0 0;
+}
+
+.video-container {
+  overflow:auto;
 }
 
 #hero .hero-container {
@@ -343,6 +344,7 @@ h6 {
   align-items: center;
   flex-direction: column;
   padding: 0 15px;
+  background-color: #6c757d;
 }
 
 #hero h1 {
